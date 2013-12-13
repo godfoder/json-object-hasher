@@ -12,6 +12,9 @@
   "devDependencies": {
   },
   "keywords": [
+    "json",
+    "hash",
+    "portable"
   ],
   "repository": "git://github.com/godfoder/json-object-hasher",
   "main": "hasher.js",
