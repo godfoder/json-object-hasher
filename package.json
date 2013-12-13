@@ -1,0 +1,19 @@
+{
+  "name": "json-object-hasher",
+  "description": "Portable Hashes for JSON objects.",
+  "version": "0.0.1",
+  "author": "Alex Thompson <godfoder@acis.ufl.edu>",
+  "contributors": [ 
+    { "name": "Alex Thompson", "email": "godfoder@acis.ufl.edu" }
+  ],
+  "dependencies": {
+    "lodash": "*"
+  },
+  "devDependencies": {
+  },
+  "keywords": [
+  ],
+  "repository": "git://github.com/godfoder/json-object-hasher",
+  "main": "hasher.js",
+  "engines": { "node": "*" }
+}
