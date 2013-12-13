@@ -14,12 +14,14 @@ var hash = function(hash_type,data,options){
 
 	s = "";
 	if(_.isArray(data)){
-		if (options.sort_arrays) {
-			data.sort();
-		}
+		sa = []
 		data.forEach(function(i){
-			s += hash(hash_type,i,options);
+			sa.push(hash(hash_type,i,options));
 		})
+		if (options.sort_arrays) {
+			sa.sort();
+		}		
+		s = sa.join("");
 	} else if (_.isString(data)){
 		s = data;
 	} else if (_.isNumber(data)) {
@@ -36,7 +38,8 @@ var hash = function(hash_type,data,options){
 		console.log(typeof data);
 	}
 
-	return h.update(s).digest('hex');;
+	// console.log(s);
+	return h.update(s).digest('hex');
 }
 
 module.exports.hash = hash;
